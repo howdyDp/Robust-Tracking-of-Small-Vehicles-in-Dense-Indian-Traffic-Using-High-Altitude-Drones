@@ -32,7 +32,7 @@ This notebook focuses on fine-tuning the base DETR model (`facebook/detr-resnet-
 - **Evaluation:** Evaluates the fine-tuned model using `pycocotools.coco.COCO` and `coco_eval.CocoEvaluator`, applying Non-Maximum Suppression (NMS) via the `supervision` library to filter overlapping detections.
 
 ### 4. `Particle_filter.ipynb`
-This notebook is dedicated to exploring and implementing highly advanced, custom tracking algorithms based on Particle Filters, utilizing DETR for frame-by-frame detections.
+This notebook is dedicated to exploring and implementing highly advanced, custom tracking algorithms based on Particle Filters, utilizing DETR and DINO for frame-by-frame detections.
 It implements several iterations of the Particle Filter algorithm:
 - **Vanilla Particle Filter:** A standard implementation using Euclidean distance and color histograms for particle weighting and state updates.
 - **GPU-Optimized Repulsive Force Particle Filter (APF):** Introduces artificial potential fields where particles are repelled by other tracked objects to prevent track merging/ID switching. Entirely vectorized using PyTorch for fast GPU execution.
